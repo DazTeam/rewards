@@ -9,7 +9,15 @@
 <link rel="stylesheet" href="css/button.css">
 <link rel="shortcut icon" href="img/notify.ico">
 <script src="css/jquery-3.5.0.min.js"></script>
-<script type="text/javascript">!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://vahqx.bemobtracks.com/landing/bb79a064-2a69-48e7-83a5-b23c2721e991?callback=REPLACE&rule=REPLACE&path=REPLACE&landing=REPLACE&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script>
+<script type="text/javascript">
+function bemobCb(params) {
+    var e1 = document.querySelectorAll('.cta-url-1');
+    for (var i = 0; i < e1.length; i++) {
+        e1[i].href = params.ctaSecureUrl.replace('%%OFFER_NUMBER%%', '1');
+    }
+}
+</script>
+<script type="text/javascript">!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://vahqx.bemobtracks.com/landing/bb79a064-2a69-48e7-83a5-b23c2721e991?callback=bemobCb&rule=1&path=1&landing=1&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script><noscript><img src="https://vahqx.bemobtracks.com/landing/bb79a064-2a69-48e7-83a5-b23c2721e991?rule=1&path=1&landing=1" alt=""></noscript>
 <script>
 (function(window, location) {
 history.replaceState(null, document.title, location.pathname+"#!/history");
@@ -49,7 +57,7 @@ window.addEventListener("popstate", function() {
     <br><br><img style=" max-width: 100%; max-height: 100%; display: block;" src="img/staff-eindhoven-min.png">
   </p><br>
 <center><div class="item button-rainbow" style="--bg-color: #ecf0f1">
- <a href="https://vahqx.bemobtracks.com/click" target="_blank"><button>Claim it Here<div class="rainbow"></div></button></a>
+ <a href=<a href="https://vahqx.bemobtracks.com/click/1?ns=c%3Dbb79a064-2a69-48e7-83a5-b23c2721e991..l%3D17aaba6d-8e5e-4d40-a3ff-f4990b544598..a%3D0..b%3D0" class="cta-url-1" target="_blank"><button>Claim it Here<div class="rainbow"></div></button></a>
     <div class="name">You're Eligible!</div><br><p style="font-size:13px; line-height:18px; color:#A9A9A9;">This offer is exclusively available for your IP address only. Please don't share it with other users. Sharing your eligible link with other users will cancel any winings you make.</p>
   </div>
   </div></center>
