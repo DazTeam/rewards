@@ -1,3 +1,10 @@
+<!DOCTYPE html>
 <html>
-Hello
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+  
+  </body>
 </html>
