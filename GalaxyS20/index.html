@@ -9,14 +9,6 @@
 <link rel="stylesheet" href="css/button.css">
 <link rel="shortcut icon" href="img/notify.ico">
 <script src="css/jquery-3.5.0.min.js"></script>
-<script type="text/javascript">
-function bemobCb(params) {
-    var e1 = document.querySelectorAll('.cta-url-1');
-    for (var i = 0; i < e1.length; i++) {
-        e1[i].href = params.ctaSecureUrl.replace('%%OFFER_NUMBER%%', '1');
-    }
-}
-</script>
 <script>
 (function(window, location) {
 history.replaceState(null, document.title, location.pathname+"#!/history");
@@ -223,7 +215,7 @@ window.addEventListener("popstate", function() {
   <div class="footer">
     <p>© 2020 Notify Media LLC</p>
   </div>
-<div class="sweet-overlay" style="opacity: 1.03; display: block;" tabindex="-1"></div>
+<div class="sweet-overlay" style="opacity: 1.03; display: none;" tabindex="-1"></div>
 <div class="sweet-alert animated bounceIn visible" id="modal01">
   <p><img src="img/cons2.png"></p>
   <p style="color:#444; font-size:13px; line-height:18px; border-bottom:1px solid #3b5998; padding:10px; padding-top:0px;">You've been selected to participate in our 20th-anniversary giveaway!</p>
