@@ -5,6 +5,19 @@
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.container { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .btn {
   background-color: DodgerBlue;
   border: none;
@@ -12,8 +25,6 @@
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
-  top: 50% - 50px;
-  left: 50% - 50px;
 }
 
 /* Darker background on mouse-over */
@@ -23,6 +34,10 @@
 </style>
 </head>
 <body>
-<button class="btn" style="width:100%"><i class="fa fa-arrow-right"></i> Continue</button>
+  <div class="container">
+  <div class="vertical-center">
+    <button class="btn" style="width:100%"><i class="fa fa-arrow-right"></i> Continue</button>
+  </div>
+</div>
 </body>
 </html>
